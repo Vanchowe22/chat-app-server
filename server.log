@@ -1,0 +1,50 @@
+апр 05, 2024 1:10:50 ПР.ОБ. Logger info
+INFO: Thread-0 started
+апр 05, 2024 1:10:50 ПР.ОБ. Logger info
+INFO: asd is added
+апр 05, 2024 1:10:50 ПР.ОБ. Logger info
+INFO: asd is added to the list
+апр 05, 2024 1:10:53 ПР.ОБ. Logger info
+INFO: asd disconnected
+апр 05, 2024 1:10:53 ПР.ОБ. Logger severe
+SEVERE: Stream closed
+апр 05, 2024 1:11:06 ПР.ОБ. Logger info
+INFO: Thread-1 started
+апр 05, 2024 1:11:06 ПР.ОБ. Logger info
+INFO: asd is added
+апр 05, 2024 1:11:06 ПР.ОБ. Logger info
+INFO: asd is added to the list
+апр 05, 2024 1:11:22 ПР.ОБ. Logger info
+INFO: Thread-2 started
+апр 05, 2024 1:11:22 ПР.ОБ. Logger info
+INFO: rr is added
+апр 05, 2024 1:11:22 ПР.ОБ. Logger info
+INFO: rr is added to the list
+апр 05, 2024 1:11:26 ПР.ОБ. Logger info
+INFO: rr disconnected
+апр 05, 2024 1:11:26 ПР.ОБ. Logger severe
+SEVERE: Stream closed
+апр 05, 2024 1:11:28 ПР.ОБ. Logger info
+INFO: Thread-3 started
+апр 05, 2024 1:11:28 ПР.ОБ. Logger info
+INFO: rr is added
+апр 05, 2024 1:11:28 ПР.ОБ. Logger info
+INFO: rr is added to the list
+апр 05, 2024 1:11:29 ПР.ОБ. Logger info
+INFO: rr disconnected
+апр 05, 2024 1:11:29 ПР.ОБ. Logger severe
+SEVERE: Stream closed
+апр 05, 2024 1:11:30 ПР.ОБ. Logger info
+INFO: Thread-4 started
+апр 05, 2024 1:11:30 ПР.ОБ. Logger info
+INFO: rr is added
+апр 05, 2024 1:11:30 ПР.ОБ. Logger info
+INFO: rr is added to the list
+апр 05, 2024 1:11:32 ПР.ОБ. Logger info
+INFO: rr disconnected
+апр 05, 2024 1:11:32 ПР.ОБ. Logger severe
+SEVERE: Stream closed
+апр 05, 2024 1:11:33 ПР.ОБ. Logger info
+INFO: asd disconnected
+апр 05, 2024 1:11:33 ПР.ОБ. Logger severe
+SEVERE: Stream closed
