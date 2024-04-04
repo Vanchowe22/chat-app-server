@@ -4,3 +4,5 @@ INFO: Thread-0 started
 INFO: asd is added
 апр 05, 2024 2:15:14 ПР.ОБ. Logger info
 INFO: asd is added to the list
+апр 05, 2024 2:16:04 ПР.ОБ. Logger severe
+SEVERE: Connection reset

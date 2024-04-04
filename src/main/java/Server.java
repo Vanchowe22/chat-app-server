@@ -4,17 +4,20 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Server {
-    private static ServerSocket server = null;
-    private static int port = 8000;
+    private static ServerSocket server;
+    private static int port;
     private static final UserList userList = new UserList();
 
     private static final MessageList messageList = new MessageList();
     private static final ArrayList<Handler> handlers = new ArrayList<>();
 
     static public void main(String args[]) throws IOException {
-        server = new ServerSocket(port);
+        Scanner scanner = new Scanner(System.in);
+        server = new ServerSocket(Integer.parseInt(scanner.nextLine()));
+        scanner.close();
         while (true) {
             Socket socket = server.accept();
             Handler handler = new Handler(socket, userList);
