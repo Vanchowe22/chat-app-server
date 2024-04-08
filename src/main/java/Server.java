@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 public class Server {
     private static ServerSocket server;
-    private static int port;
     private static final UserList userList = new UserList();
 
     private static final MessageList messageList = new MessageList();
