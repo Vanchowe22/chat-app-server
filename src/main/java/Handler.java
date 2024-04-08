@@ -8,7 +8,7 @@ public class Handler implements Runnable {
     private UserList userList;
     private final Logger logger = new Logger();
 
-    private final Controller controller = new Controller();
+    private final Helper controller = new Helper();
 
     public Handler(Socket client, UserList userList) {
         this.client = client;

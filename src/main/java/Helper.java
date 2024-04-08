@@ -1,6 +1,6 @@
 import java.io.PrintWriter;
 
-public class Controller {
+public class Helper {
     public void updateList(String users) {
         Server.broadcast(users, "U:");
     }
