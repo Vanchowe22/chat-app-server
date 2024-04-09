@@ -8,7 +8,7 @@ public class Handler implements Runnable {
     private UserList userList;
     private final Logger logger = new Logger();
 
-    private final Helper controller = new Helper();
+    private final Helper helper = new Helper();
 
     public Handler(Socket client, UserList userList) {
         this.client = client;
@@ -32,27 +32,27 @@ public class Handler implements Runnable {
             logger.info(Thread.currentThread().getName() + " started");
 
             nickname = nickname.substring(2);
-            userList.add(new User(id, nickname));
+            userList.add(id, nickname);
 
             logger.info(nickname + " is added");
-            controller.updateList(userList.getUserList());
+            helper.updateList(userList.getUserList());
 
             logger.info(nickname + " is added to the list");
 
-            controller.someoneJoined(nickname);
-            controller.sendAllMessages(pr, MessageList.getMessages());
+            helper.someoneJoined(nickname);
+            helper.sendAllMessages(pr, MessageList.getMessages());
 
             String text;
             while ((text = br.readLine()) != null) {
                 if (text.startsWith("T")) {
                     logger.info(text);
-                    controller.sendMessage(text.substring(2));
+                    helper.sendMessage(text.substring(2));
                 } else if (text.startsWith("L")) {
                     userList.removeUser(nickname);
                     logger.info(nickname + " disconnected");
 
-                    controller.updateList(userList.getUserList());
-                    controller.someoneLeft(text.substring(2));
+                    helper.updateList(userList.getUserList());
+                    helper.someoneLeft(text.substring(2));
                     this.endSession();
                 }
             }
