@@ -9,12 +9,12 @@ public class UserList {
         this.userList = new ArrayList<>();
     }
 
-    public void add(User user) throws AlreadyHereException {
+    public void add(int id, String name) throws AlreadyHereException {
         synchronized (userList) {
-            if (checkIfHere(user.getName())) {
+            if (checkIfHere(name)) {
                 throw new AlreadyHereException("Try new name");
             }
-            userList.add(user);
+            userList.add(new User(id, name));
         }
     }
 
