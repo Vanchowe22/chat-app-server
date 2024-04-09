@@ -3,9 +3,9 @@ import java.util.ArrayList;
 public class MessageList {
     private static final ArrayList<Message> messageList = new ArrayList<>();
 
-    public void add(Message message) {
+    public void add(String message) {
         synchronized (messageList) {
-            messageList.add(message);
+            messageList.add(new Message(message));
         }
     }
 

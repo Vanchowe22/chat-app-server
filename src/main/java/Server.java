@@ -9,7 +9,6 @@ import java.util.Scanner;
 public class Server {
     private static ServerSocket server;
     private static final UserList userList = new UserList();
-
     private static final MessageList messageList = new MessageList();
     private static final ArrayList<Handler> handlers = new ArrayList<>();
 
@@ -29,7 +28,7 @@ public class Server {
 
     public static synchronized void broadcast(String message, String operation) {
         if (!Objects.equals(operation, "U:")) {
-            messageList.add(new Message(message));
+            messageList.add(message);
             for (Handler handler : handlers) {
                 handler.getPr().println(operation + message);
             }
